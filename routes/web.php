@@ -5,4 +5,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class, 'index'] );
 
-
+Route::get ('/login', function () {
+    return view('login');
+});
